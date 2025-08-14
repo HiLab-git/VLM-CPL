@@ -1,7 +1,7 @@
 # VLM-CPL
 
 ### Overall Framework
-There are three steps to train the classification network.
+There are three steps to train the classification network with selected high-quality pseudo labels.
 ![overall](https://github.com/lanfz2000/VLM-CPL/blob/main/fig1.png)
 
 ### Data prepare
