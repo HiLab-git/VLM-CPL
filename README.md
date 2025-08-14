@@ -15,7 +15,8 @@ Using a 4:1 split for training and testing.
 ### Training process
 
 First, use the on-the-shelf VLM for zero-shot inference with our proposed method to filter out noisy samples on the training set.  
-In the vlm_cpl_LC25K.py file, there are two main functions, ```MCV```and```Prompt_feature_consensus```.
+In the vlm_cpl_LC25K.py file, there are two main functions, ```MCV```and```Prompt_feature_consensus```.  
+You can use the combination of ```MCV```and```Prompt_feature_consensus``` or either of them. And you can also turn the order of these two filters.
 ```
 python vlm_cpl_LC25K.py --gpu 0
 ```
