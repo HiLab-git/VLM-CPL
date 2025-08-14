@@ -14,11 +14,12 @@ Using a 4:1 split for training and testing.
 
 ### Training process
 
-First, use the on-the-shelf VLM for zero-shot inference with our proposed method to filter out noisy samples on the training set.
+First, use the on-the-shelf VLM for zero-shot inference with our proposed method to filter out noisy samples on the training set.  
+In the vlm_cpl_LC25K.py file, there are two main functions, ```MCV```and```Prompt_feature_consensus```.
 ```
-python zero_shot_HPH_un.py --gpu 0
+python vlm_cpl_LC25K.py --gpu 0
 ```
 Second, after obtaining high-quality pseudo-labels, you can train a classification network.
 ```
-python train_pseudo.py --gpu 0
+python train_pseudo.py --gpu 0 --pseudo_csv <your_csv>
 ```
